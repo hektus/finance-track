@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.header h1 {
+  font-size: 39px;
+}
+
+.header i {
+  margin-right: 10px;
+}
+
+.header p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.transaction-list {
+  width: 60%;
+  text-align: center;
+}
+
+.transaction-list h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.profits,
+.expenses {
+  border: 1px solid rgb(170, 170, 170);
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.transaction {
+  display: flex;
+}
+
+.profits {
+  margin-right: 20px;
+}
+
+.profits > p {
+  font-size: 25px;
+  color: green;
+  font-weight: bold;
+}
+
+.expenses > p {
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+}
+
+.funds {
+  border: 1px solid rgb(170, 170, 170);
+  width: 40%;
+  margin-left: 20px;
+}
+
+.income,
+.outgoings {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.income i,
+.outgoings i {
+  margin-right: 10px;
+}
+
+.income-amount,
+.outgoings-amount {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.delete {
+  margin: 0 30px 0 -40px;
+}
+
+/* .income-name {
+  margin-right: 50%;
+} */
+
+.funds {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.available-funds {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.funds > :first-child {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-top: 50px;
+}
+
+/* .funds > p {
+  font-size: 20px;
+} */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.add-transaction,
+.delete-all {
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 5px;
+}
+
+.add-transaction {
+  margin-right: 30px;
+}
+
+.add-transaction i,
+.delete-all i {
+  margin-right: 5px;
+}
+
+.style {
+  margin-bottom: 50px;
+}
+
+.style p {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bright,
+.dark {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  float: left;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.bright {
+  margin-right: 30px;
+  background-color: white;
+}
+
+.style-btn {
+  display: flex;
+  justify-content: center;
+}
