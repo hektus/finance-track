@@ -18,7 +18,7 @@
         <div class="transaction">
           <div class="profits">
             <p>Przychód:</p>
-            <div class="income">
+            <!-- <div class="income">
               <i class="fa-solid fa-money-bill-wave"></i>
               <p class="income-name">Wypłatadassdaw</p>
               <p class="income-amount">2500zł</p>
@@ -29,7 +29,7 @@
               <p class="income-name">Wypłata</p>
               <p class="income-amount">2500zł</p>
               <p class="delete">X</p>
-            </div>
+            </div> -->
           </div>
           <div class="expenses">
             <p>Wydatki:</p>
@@ -68,7 +68,36 @@
         </div>
       </div>
     </div>
+    <div class="add-transaction-popup">
+      <h1>Dodaj nową transakcję</h1>
+      <p>Nazwa</p>
+      <p>(podaj nazwę transakcji)</p>
+      <input type="text" class="transaction-name" />
+      <p>Kwota:</p>
+      <p>
+        (podaj kwotę transakcji, jeśli dodajesz wydatek, postaw minusa na
+        początku kwoty)
+      </p>
+      <input type="number" class="transaction-amount" />
+      <p>Wybierz kategorię:</p>
+      <p>([+] oznacza przychód, [-] oznacza wydatek)</p>
+      <select name="" id="" class="transaction-category">
+        <option value="0" selected></option>
+        <option value="+">[+] Przychód</option>
+        <option value="-">[-] Zakupy</option>
+        <option value="-">[-] Jedzenie</option>
+        <option value="-">[-] Kino</option>
+      </select>
 
+      <div class="buttons">
+        <button class="save">
+          <i class="fa-regular fa-floppy-disk"></i>Zapisz
+        </button>
+        <button class="cancel">
+          <i class="fa-solid fa-rectangle-xmark"></i>Anuluj
+        </button>
+      </div>
+    </div>
     <script
       src="https://kit.fontawesome.com/3fbc7566d2.js"
       crossorigin="anonymous"
