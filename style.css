@@ -250,3 +250,7 @@
 .save {
   margin-right: 30px;
 }
+
+.fa-xmark {
+  cursor: pointer;
+}
