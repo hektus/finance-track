@@ -5,10 +5,11 @@ const saveBtn = document.querySelector(".save");
 const transactionCategory = document.querySelector(".transaction-category");
 let availableFunds = document.querySelector(".available-funds");
 const transactionAmount = document.querySelector(".transaction-amount");
+const dark = document.querySelector(".dark");
+const bright = document.querySelector(".bright");
 
 // const income = document.querySelector(".income");
 let sum = 0;
-let ID = 0;
 
 function addPopupActive() {
   addPopup.classList.add("add-transaction-popup-active");
@@ -51,6 +52,10 @@ function saveTransaction() {
     el.addEventListener("click", deleteEl);
   });
 
+  transactionName.value = "";
+  transactionAmount.value = "";
+  transactionCategory.value = "";
+
   addPopupInactive();
 }
 
@@ -92,6 +97,33 @@ function deleteEl() {
 //  transactionCategory.options[2]
 // }
 
+const body = document.querySelector("body");
+const wrapper = document.querySelector(".wrapper");
+const header = document.querySelector("header");
+const allButtons = document.querySelectorAll("button");
+
+function darkTheme() {
+  body.classList.add("body-dark");
+  wrapper.classList.add("dark-theme");
+  header.classList.add("dark-theme");
+  allButtons.forEach((el) => {
+    el.classList.add("dark-theme");
+  });
+  dark.classList.add("dark-white");
+}
+
+function brightTheme() {
+  body.classList.remove("body-dark");
+  wrapper.classList.remove("dark-theme");
+  header.classList.remove("dark-theme");
+  allButtons.forEach((el) => {
+    el.classList.remove("dark-theme");
+  });
+  dark.classList.remove("dark-white");
+}
+
 addTransactionBtn.addEventListener("click", addPopupActive);
 cancelBtn.addEventListener("click", addPopupInactive);
 saveBtn.addEventListener("click", saveTransaction);
+dark.addEventListener("click", darkTheme);
+bright.addEventListener("click", brightTheme);
